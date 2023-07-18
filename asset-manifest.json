@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/bitcoin_tracker/static/js/main.4d8329b8.js",
+    "main.js": "/bitcoin_tracker/static/js/main.c4d27f3a.js",
     "index.html": "/bitcoin_tracker/index.html",
-    "main.4d8329b8.js.map": "/bitcoin_tracker/static/js/main.4d8329b8.js.map"
+    "main.c4d27f3a.js.map": "/bitcoin_tracker/static/js/main.c4d27f3a.js.map"
   },
   "entrypoints": [
-    "static/js/main.4d8329b8.js"
+    "static/js/main.c4d27f3a.js"
   ]
 }
