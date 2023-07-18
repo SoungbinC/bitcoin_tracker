@@ -34,7 +34,7 @@ const Router = createHashRouter(
         },
     ],
     {
-        basename: process.env.PUBLIC_URL,
+        basename: "/",
     }
 )
 
