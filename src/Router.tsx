@@ -5,7 +5,7 @@ import Price from "./routes/Price"
 import Chart from "./routes/Chart"
 import App from "./App"
 
-const Router = createHashRouter(
+const Router = createBrowserRouter(
     [
         {
             path: "/",
@@ -34,7 +34,7 @@ const Router = createHashRouter(
         },
     ],
     {
-        basename: "/",
+        basename: process.env.PUBLIC_URL,
     }
 )
 
