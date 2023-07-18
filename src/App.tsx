@@ -1,5 +1,7 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import { ThemeProvider, createGlobalStyle } from "styled-components"
+import { darktheme } from "./theme"
+import { Outlet } from "react-router"
 const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Poiret+One&display=swap');
@@ -70,7 +72,14 @@ a{
 }
 `
 function App() {
-    return <div>hello</div>
+    return (
+        <>
+            <ThemeProvider theme={darktheme}>
+                <GlobalStyle />
+                <Outlet />
+            </ThemeProvider>
+        </>
+    )
 }
 
 export default App
