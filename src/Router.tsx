@@ -7,7 +7,7 @@ import App from "./App"
 
 const Router = createBrowserRouter([
     {
-        path: "/",
+        path: "",
 
         element: <App />,
         children: [
