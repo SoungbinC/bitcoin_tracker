@@ -1,6 +1,6 @@
-import React from "react"
+import { useState } from "react"
 import { ThemeProvider, createGlobalStyle } from "styled-components"
-import { darktheme } from "./theme"
+import { darktheme, lighttheme } from "./theme"
 import { Outlet } from "react-router"
 const GlobalStyle = createGlobalStyle`
 
@@ -72,9 +72,12 @@ a{
 }
 `
 function App() {
+    const [theme, setTheme] = useState(false)
+    const toggleTheme = () => setTheme(!theme)
     return (
         <>
-            <ThemeProvider theme={darktheme}>
+            <ThemeProvider theme={theme ? darktheme : lighttheme}>
+                <button onClick={toggleTheme}>Toggle Theme</button>
                 <GlobalStyle />
                 <Outlet />
             </ThemeProvider>

@@ -70,6 +70,9 @@ function Coins() {
 
     return (
         <Cotinaer>
+            <Header>
+                <Title>Crypto Coins</Title>
+            </Header>
             {isLoading ? (
                 <Loader>Loading...</Loader>
             ) : (
