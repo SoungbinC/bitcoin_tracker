@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 import Coins from "./routes/Coins"
 import Coin from "./routes/Coin"
 import Price from "./routes/Price"
